@@ -1,0 +1,26 @@
+#! /usr/bin/env node
+
+const { Command } = require('commander');
+const program = new Command();
+const chalk = require('chalk')
+
+program
+  .version(`koa-cli ${require('../package.json').version}`)
+  .usage('<command> [option]')
+
+program
+  .command('create <app-name>')
+  .description('创建项目名')
+  .option('-f --force', '强制覆盖已存在的目录')
+  .action((name, cmd) => {
+    require('../lib/choicesDatabase')(name, cmd)
+  })
+
+program.on('--help', () => {
+  console.log()
+  console.log(`帮助您${chalk.cyan('急速')}开发一个${chalk.cyan('精简')}的koa框架`)
+  console.log()
+})
+
+// 解析用户执行命令时传入的参数
+program.parse()
