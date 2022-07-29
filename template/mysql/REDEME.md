@@ -5,9 +5,9 @@
 CREATE DATABASE dataname DEFAULT CHARACTER SET utf8 COLLATE utf8_general_
 ci;
 ```
-
-2. 执行重置表命令: `npm run sync:force`
-3. `npm run dev`
+2. 进入`src/conf/secretKeys.js`,设置mysql连接密码.
+3. 执行重置表命令: `npm run sync:force`
+4. `npm run dev`
 
 ## 已有功能
 
