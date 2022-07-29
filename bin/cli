@@ -18,7 +18,8 @@ program
 
 program.on('--help', () => {
   console.log()
-  console.log(`帮助您${chalk.cyan('急速')}开发一个${chalk.cyan('精简')}的koa框架`)
+  console.log(`帮助您${chalk.cyan('急速')}开发一个${chalk.cyan('精简')}的koa框架.`)
+  console.log(`如果疑问和需求欢迎issues和pr,也可加本人微信沟通 ${chalk.green('tsdhr1')}`)
   console.log()
 })
 

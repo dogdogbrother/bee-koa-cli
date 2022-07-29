@@ -1,11 +1,12 @@
 {
-  "name": "koa-cli",
-  "version": "1.0.0",
+  "name": "bee-koa-cli",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
-  "bin": "./bin/cli",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "koa": "./bin/cli",
+    "koa-cli": "./bin/cli",
+    "bee-koa-cli": "./bin/cli"
   },
   "author": "senlin",
   "license": "ISC",
@@ -15,5 +16,9 @@
     "fs-extra": "^10.1.0",
     "inquirer": "^8.2.4",
     "ora": "^5.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dogdogbrother/bee-koa-cli.git"
   }
 }
