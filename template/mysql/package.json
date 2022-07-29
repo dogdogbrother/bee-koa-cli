@@ -1,0 +1,31 @@
+{
+  "name": "mysql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev nodemon /src/app.js",
+    "start": "cross-env NODE_ENV=production node ./src/app.js",
+    "sync:alter": "node ./src/db/alter-sync.js",
+    "sync:force": "node ./src/db/force-sync.js"
+  },
+  "dependencies": {
+    "formidable-upload-koa": "^1.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-json-error": "^3.1.2",
+    "koa-jwt": "^4.0.3",
+    "koa-parameter": "^3.0.1",
+    "koa-router": "^10.1.1",
+    "koa-static": "^5.0.0",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.12.5"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.14"
+  },
+  "author": "",
+  "license": "ISC"
+}
